@@ -4,6 +4,9 @@ git config --global user.email "matthew.w.mix@gmail.com"
 git config --global core.editor nvim
 git config --global color.ui true
 
+# vim-colors-solarized
+https://github.com/altercation/vim-colors-solarized
+
 # ZSH
 dnf install zsh
 curl -L http://install.ohmyz.sh | sh
