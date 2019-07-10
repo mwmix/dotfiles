@@ -54,7 +54,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'micha/vim-colors-solarized'
-""Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
@@ -65,6 +65,11 @@ if has('nvim')
     let g:deoplete#enable_at_startup = 1
     let g:deoplete#sources#go#gocode_binary = "/development/bin/gocode"
 endif
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=/root/.vimundo/
 
 set number
 
