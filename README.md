@@ -70,6 +70,7 @@ endif
 set undofile
 " set a directory to store the undo history
 set undodir=/root/.vimundo/
+set hidden
 
 set number
 
